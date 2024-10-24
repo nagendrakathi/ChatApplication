@@ -1,3 +1,6 @@
+# Writing the content for the README.md file
+
+readme_content = """
 # Chat Application
 
 This is a real-time chat application developed in Java that allows users to communicate with each other over a network. The application consists of a server that handles multiple client connections and a client that provides an interface for users to send and receive messages.
@@ -22,20 +25,3 @@ This is a real-time chat application developed in Java that allows users to comm
 1. Clone the repository:
    ```bash
    git clone https://github.com/nagendrakathi/ChatApplication.git
-
-### How to Run
-
-1. Compile the .java files:
-  ```bash
-   javac ChatServer.java
-   javac ClientHandler.java
-   javac ChatClient.java
-
-
-2. Run the ChatServer:
-  ```bash
-   java ChatServer
-   java ChatClient localhost 1234
-
-
-Now open terminals as different clients and chat
