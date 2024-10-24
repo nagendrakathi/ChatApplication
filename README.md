@@ -32,7 +32,7 @@ This is a real-time chat application developed in Java that allows users to comm
    javac ChatClient.java
 
 
-2. Run the ChatServer
+2. Run the ChatServer:
   ```bash
    java ChatServer
    java ChatClient localhost 1234
