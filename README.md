@@ -22,3 +22,17 @@ This is a real-time chat application developed in Java that allows users to comm
 1. Clone the repository:
    ```bash
    git clone https://github.com/nagendrakathi/ChatApplication.git
+
+### How to Run
+
+1. Compile the .java files:
+  ```bash
+   javac ChatServer.java
+   javac ClientHandler.java
+   javac ChatClient.java
+2. Run the ChatServer
+  ```bash
+   java ChatServer
+   java ChatClient localhost 1234
+
+Now open terminals as different clients and chat
