@@ -30,6 +30,7 @@ This is a real-time chat application developed in Java that allows users to comm
    javac ChatServer.java
    javac ClientHandler.java
    javac ChatClient.java
+
 2. Run the ChatServer
   ```bash
    java ChatServer
