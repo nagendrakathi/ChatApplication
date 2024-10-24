@@ -19,17 +19,6 @@ public class ChatServer {
             e.printStackTrace();
         }
     }
-    public void createRoom(String roomName) {
-        chatRooms.putIfAbsent(roomName, new ChatRoom(roomName));
-    }
-
-    public void joinRoom(String roomName, ClientHandler client) {
-        ChatRoom room = chatRooms.get(roomName);
-        if (room != null) {
-            room.addClient(client);
-            client.setCurrentRoom(room);
-        }
-    }
     public static void broadcast(String message, ClientHandler excludeUser) {
         for (ClientHandler client : clientHandlers) {
             if (client != excludeUser) {

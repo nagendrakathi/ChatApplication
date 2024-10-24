@@ -8,13 +8,10 @@ class ClientHandler implements Runnable {
     public ClientHandler(Socket socket) {
         this.socket = socket;
     }
-
     @Override
     public void run() {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
             writer = new PrintWriter(socket.getOutputStream(), true);
-            
-            // User authentication
             printToClient("Enter your username: ");
             username = reader.readLine();
             while (!ChatServer.addUser(username)) {
@@ -37,14 +34,11 @@ class ClientHandler implements Runnable {
             ChatServer.broadcast(username + " has left the chat.", this);
         }
     }
-
-    // Send message to the client
     public void sendMessage(String message) {
         writer.println(message);
     }
-
-    // Prompt message to the client
     private void printToClient(String message) {
         writer.println(message);
     }
+    
 }
