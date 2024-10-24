@@ -1,6 +1,3 @@
-# Writing the content for the README.md file
-
-readme_content = """
 # Chat Application
 
 This is a real-time chat application developed in Java that allows users to communicate with each other over a network. The application consists of a server that handles multiple client connections and a client that provides an interface for users to send and receive messages.
